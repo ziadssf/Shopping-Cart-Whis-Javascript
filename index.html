@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+
+        <header>
+            <div class="container">
+                <div class="content">
+                    <div class="logo">
+                        <a href="index.html" class="logo-text">Shopping Cart</a>
+                        <li><a href="login.html " id="user_info"></a></li>
+                    </div>
+                    <!--If width whis screen is Big ----------------------------------->
+                    <nav>
+                        <div class="big">
+
+                            <!--If Log In ----------------------------------------------------->
+                            <ul id="links">
+                                <div class="back">
+                                    <li><a href="login.html">Log in</a></li>
+                                    <li><a href="regster.html">Sign Up</a></li>
+                                    <a style="color: red;position: relative;left: -30px;padding: 15px 10px 10px;border: 0;display: none;" href="favorites.html"><i style="color: red;font-size: 30px;" class="fa fa-heart"></i></a>
+                                </div>
+                                <li class="add">
+                                    <i class="fas fa-shopping-cart icone icone-links"></i>
+                                    <span class="badge badge-danger badge"></span>
+                                    <div class="cartproduct-links cartproduct">
+                                        <h2 class="priceProduct"></h2>
+                                        <p></p>
+                                        <button class="btn btn-success  btn-lg"><a class="none" href="cartProducts.html">Veiw All</a></button>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul id="user">
+                                <li class="add">
+                                    <a style="color: red;position: relative;left: -30px;padding: 15px 10px 10px;border: 0;" href="favorites.html"><i style="color: red;font-size: 30px;" class="fa fa-heart"></i></a>
+                                    <i class="fas fa-shopping-cart icone icone-user"></i>
+                                    <span class="badge badge-danger badge"></span>
+                                    <div class="cartproduct-user cartproduct">
+                                        <h2 class="priceProduct"></h2>
+                                        <p></p>
+                                        <button class="btn btn-success  btn-lg"><a class="none" href="cartProducts.html">Veiw All</a></button>
+                                    </div>
+                                </li>
+                                <li><a href="#" id="log_out">Log Out</a></li>
+                            </ul>
+                            
+                        </div>
+
+                    <!--If width whis screen is Small ----------------------------------->
+                        <div class="burger">
+                            <i class="fa fa-bars iconBurger"></i>
+                            <div class="slideBurger">
+                                <li><a href="regster.html">Sign Up</a></li>
+                                <li><a href="#" id="log_out_burger">Log Out</a></li>
+                                <a style="color: red;padding: 15px 10px 10px;border: 0;" href="favorites.html"><i style="color: red;font-size: 30px;" class="fa fa-heart"></i></a>
+                                <li id="log_in_burger"><a href="#">Log In</a></li>
+                                <li class="add">
+                                    <i class="fas fa-shopping-cart icone icone-burger"></i>
+                                    <span class="badge badge-danger badge"></span>
+                                    <div class="cartproduct-burger cartproduct">
+                                        <h2 class="priceProduct"></h2>
+                                        <p></p>
+                                        <button class="btn btn-success"><a class="none" href="cartProducts.html">Veiw All</a></button>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </nav>
+                        
+                </div>
+            </div>
+
+        </header>
+
+
+
+        <section class="home">
+            <div style="position: relative;" class="container">
+                <input autofocus type="text" class="search form-control">
+                <div class="products row"> </div>
+            </div>
+        </section>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

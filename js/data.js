@@ -1,0 +1,77 @@
+let products = [
+   {
+       id: 1,
+       title:'woofer',
+       size:'larg',
+       imgUrl:'./images/woofer.png',
+       qty:1,
+       price:900,
+   },
+   {
+       id: 2,
+       title:'basketball',
+       size:'x-larg',
+       imgUrl:'./images/basketball.png',
+       qty:1,
+       price:60,
+   },
+   {
+       id: 3,
+       title:'headPhones',
+       size:'medium',
+       imgUrl:'./images/headphones.png',
+       qty:1,
+       price:70,
+   },
+   {
+       id: 4,
+       title:'iphone black',
+       size:'xx-larg',
+       imgUrl:'./images/black.png',
+       qty:1,
+       price:290,
+   },
+   {
+       id: 5,
+       title:'iphone red',
+       size:'larg',
+       imgUrl:'./images/red.png',
+       qty:1,
+       price:250,
+   },
+   {
+       id: 6,
+       title:'iphone gray',
+       size:'small',
+       imgUrl:'./images/gray.png',
+       qty:1,
+       price:200,
+   },
+   {
+       id: 7,
+       title:'donuts',
+       size:'larg',
+       imgUrl:'./images/donut.png',
+       qty:1,
+       price:2,
+   },
+   {
+       id: 8,
+       title:'Feature',
+       size:'larg',
+       imgUrl:'./images/feature.png',
+       qty:1,
+       price:2,
+   },
+   {
+       id: 9,
+       title:'Controlar',
+       size:'larg',
+       imgUrl:'./images/controlar.png',
+       qty:1,
+       price:2,
+   },
+   
+]
+
+localStorage.setItem('pruducts',JSON.stringify(products))
